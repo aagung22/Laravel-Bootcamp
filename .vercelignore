@@ -1,0 +1,6 @@
+/vendor
+/.env
+/public/build
+/node_modules
+/storage
+/tests

@@ -5,7 +5,6 @@ use App\Http\Controllers\CafeController;
 use App\Http\Controllers\PaymentController;
 
 Route::get('/', [CafeController::class, 'index']);
-Route::get('/about', [CafeController::class, 'about']);
 Route::get('/menu', [CafeController::class, 'menu']);
 Route::get('/order/dine-in', [CafeController::class, 'dineIn'])->name('order.dine-in');
 Route::post('/order/store', [CafeController::class, 'storeOrder'])->name('order.store');

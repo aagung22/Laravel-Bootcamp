@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Struk Pembayaran Byte & Brew</title>
+    <title>Struk Pembayaran Cloud Bread</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,10 +18,10 @@
             border: 1px solid #ebdcb9;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 10px rgba(139, 107, 74, 0.1);
         }
         .header {
-            background-color: #20622c;
+            background-color: #8B6B4A;
             color: #ffffff;
             padding: 30px;
             text-align: center;
@@ -130,7 +130,7 @@
         .total-row.grand-total .total-cell.value {
             font-size: 18px;
             font-weight: 700;
-            color: #20622c;
+            color: #8B6B4A;
         }
         .divider {
             border-top: 1px solid #ebdcb9;
@@ -166,13 +166,13 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>☕ Byte & Brew Coffee & Eatery</h1>
-            <p>Universitas Dr. Soetomo Surabaya</p>
+            <h1>Cloud Bread</h1>
+            <p>Toko Roti Cloud Bread</p>
         </div>
         
         <div class="content">
             <div style="text-align: center; margin-bottom: 25px;">
-                <span style="font-size: 18px; font-weight: 700; color: #20622c; display: block;">TERIMA KASIH!</span>
+                <span style="font-size: 18px; font-weight: 700; color: #8B6B4A; display: block;">TERIMA KASIH!</span>
                 <span style="font-size: 13px; color: #8c8c8c;">Pemesanan Dine-In Anda telah sukses diproses</span>
             </div>
 
@@ -274,8 +274,8 @@
         </div>
 
         <div class="footer">
-            <p style="font-weight: 600; color: #20622c;">Byte & Brew Coffee & Eatery</p>
-            <p>Universitas Dr. Soetomo Surabaya</p>
+            <p style="font-weight: 600; color: #8B6B4A;">Cloud Bread</p>
+            <p>Toko Roti Cloud Bread</p>
             <p style="margin-top: 10px; font-size: 11px;">
                 Email ini dikirim secara otomatis. Harap tidak membalas email ini.
             </p>
@@ -283,7 +283,7 @@
                 Jika ada kendala pemesanan, silakan tunjukkan ID Pesanan ini ke kasir kami.
             </p>
             <p style="margin-top: 15px; font-size: 11px; color: #b0b0b0;">
-                &copy; {{ date('Y') }} Byte & Brew Coffee & Eatery. All rights reserved.
+                &copy; {{ date('Y') }} Cloud Bread. All rights reserved.
             </p>
         </div>
     </div>
