@@ -33,7 +33,7 @@ class OrderReceiptMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Struk Pembayaran Byte & Brew - ' . $this->order->order_code,
+            subject: 'Struk Pembayaran Cloud Bread - ' . $this->order->order_code,
         );
     }
 
