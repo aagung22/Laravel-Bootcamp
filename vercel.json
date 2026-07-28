@@ -35,8 +35,7 @@
     "env": {
         "APP_NAME": "Cloud Bread",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_KEY": "base64:2kjYZMypA6LMfUK7cFoYVZBNCsQfB5XiDT7cNsJz7vQ=",
+        "APP_DEBUG": "true",
         "APP_URL": "https://latihan-bootcamp-xi.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
@@ -48,7 +47,9 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "QUEUE_CONNECTION": "sync",
-        "DB_CONNECTION": "sqlite"
+        "DB_CONNECTION": "pgsql",
+        "MAIL_MAILER": "log",
+        "MIDTRANS_IS_PRODUCTION": "false"
     },
     "outputDirectory": "public"
 }

@@ -22,7 +22,7 @@ class CafeController extends Controller
     public function menu()
     {
         $menus = Menu::all();
-        return view('Menu', compact('menus'));
+        return view('menu', compact('menus'));
     }
     
     public function dineIn()
