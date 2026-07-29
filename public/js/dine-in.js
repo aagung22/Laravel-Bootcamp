@@ -341,8 +341,8 @@ function renderReceipt(order, paymentMethod) {
     const receiptContent = document.getElementById('receipt-content');
     receiptContent.innerHTML = `
         <div class="text-center border-b border-dashed border-neutral-200 pb-4 mb-4">
-            <h4 class="text-base font-bold text-neutral-800">Byte & Brew Coffee & Eatery</h4>
-            <p class="text-[10px] text-neutral-400 mt-0.5">Universitas Dr. Soetomo Surabaya</p>
+            <h4 class="text-base font-bold text-neutral-800">Cloud Bread</h4>
+            <p class="text-[10px] text-neutral-400 mt-0.5">Toko Roti Cloud Bread</p>
             ${paymentMethod !== 'cash' ? `
                 <div class="mt-2 inline-block px-3 py-1 rounded-full text-xs font-bold ${order.payment_status === 'paid' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}">
                     ${statusLabels[order.payment_status] || 'MENUNGGU'}

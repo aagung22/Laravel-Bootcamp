@@ -54,7 +54,12 @@
         "DB_USERNAME": "neondb_owner",
         "DB_SSLMODE": "require",
         "NEON_ENDPOINT_ID": "ep-shy-violet-az30sqya",
-        "MAIL_MAILER": "log",
+        "MAIL_MAILER": "smtp",
+        "MAIL_HOST": "smtp.gmail.com",
+        "MAIL_PORT": "587",
+        "MAIL_USERNAME": "agungsedayuuu28@gmail.com",
+        "MAIL_FROM_ADDRESS": "agungsedayuuu28@gmail.com",
+        "MAIL_FROM_NAME": "Cloud Bread",
         "MIDTRANS_IS_PRODUCTION": "false"
     },
     "outputDirectory": "public"
