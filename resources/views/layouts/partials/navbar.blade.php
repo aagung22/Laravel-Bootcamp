@@ -120,4 +120,59 @@
             if (menuIcon) menuIcon.className = 'material-symbols-outlined text-white';
         }
     });
+
+    // Mobile Drawer Toggle Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggleBtn = document.getElementById('menu-toggle-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const menuIcon = document.getElementById('menu-toggle-icon');
+        const closeMenuButtons = document.querySelectorAll('[data-close-menu]');
+        
+        // Fungsi untuk toggle drawer
+        function toggleDrawer() {
+            mobileDrawer.classList.toggle('hidden');
+            
+            // Ganti icon antara menu dan close
+            if (mobileDrawer.classList.contains('hidden')) {
+                menuIcon.textContent = 'menu';
+            } else {
+                menuIcon.textContent = 'close';
+            }
+        }
+        
+        // Event listener untuk tombol toggle
+        if (menuToggleBtn) {
+            menuToggleBtn.addEventListener('click', toggleDrawer);
+        }
+        
+        // Event listener untuk menutup drawer saat klik link di dalamnya
+        closeMenuButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Tutup drawer
+                if (!mobileDrawer.classList.contains('hidden')) {
+                    mobileDrawer.classList.add('hidden');
+                    if (menuIcon) menuIcon.textContent = 'menu';
+                }
+            });
+        });
+        
+        // Tutup drawer saat klik di luar drawer
+        document.addEventListener('click', function(e) {
+            const isClickInsideDrawer = mobileDrawer.contains(e.target);
+            const isClickOnToggle = menuToggleBtn.contains(e.target);
+            
+            if (!isClickInsideDrawer && !isClickOnToggle && !mobileDrawer.classList.contains('hidden')) {
+                mobileDrawer.classList.add('hidden');
+                if (menuIcon) menuIcon.textContent = 'menu';
+            }
+        });
+        
+        // Tutup drawer saat resize ke desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768 && !mobileDrawer.classList.contains('hidden')) {
+                mobileDrawer.classList.add('hidden');
+                if (menuIcon) menuIcon.textContent = 'menu';
+            }
+        });
+    });
 </script>
