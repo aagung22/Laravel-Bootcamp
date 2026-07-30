@@ -29,23 +29,15 @@
 
 <!-- Mobile Drawer Menu -->
 <div id="mobile-drawer" class="fixed inset-0 z-40 bg-background/98 backdrop-blur-md flex flex-col justify-center items-center gap-8 md:hidden hidden transition-all duration-300">
-    <a href="{{ url('/') }}" class="font-display-lg text-3xl text-primary font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
+    <a href="{{ url('/') }}" class="font-display-lg text-3xl text-white font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
         Beranda
         <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="{{ url('/menu') }}" class="font-display-lg text-3xl text-primary font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
+    <a href="{{ url('/menu') }}" class="font-display-lg text-3xl text-white font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
         Menu
         <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
     </a>
-    <a href="{{ url('/about') }}" class="font-display-lg text-3xl text-primary font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
-        Tentang Kami
-        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-    </a>
-    <a href="{{ url('/gallery') }}" class="font-display-lg text-3xl text-primary font-bold hover:text-on-tertiary-container transition-colors relative group" data-close-menu>
-        Gallery
-        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-    </a>
-    <a href="{{ url('/order/dine-in') }}" class="bg-primary text-on-primary px-8 py-3.5 font-label-caps text-sm tracking-widest font-bold hover:bg-primary/90 transition-all active:scale-95 rounded-xl" data-close-menu>
+    <a href="{{ url('/order/dine-in') }}" class="bg-primary text-white px-8 py-3.5 font-label-caps text-sm tracking-widest font-bold hover:bg-primary/90 transition-all active:scale-95 rounded-xl" data-close-menu>
         PESAN SEKARANG
     </a>
 </div>
